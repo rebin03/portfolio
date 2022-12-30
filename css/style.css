@@ -773,7 +773,7 @@ h3.my-profession{
 }
 
 @media (max-width:991px)
-{
+{   
     .contact .contact-info-item,
     .portfolio .portfolio-item,
     .service .service-item
@@ -798,8 +798,8 @@ h3.my-profession{
     .contact .contact-info-item,
     .portfolio .portfolio-item,
     .service .service-item,
-    .about.about-content .experience,
-    .about.about-content .education,
+    .about .about-content .experience,
+    .about .about-content .education,
     .about .about-content .skills,
     .about .about-content .personal-info
     {
