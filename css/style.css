@@ -785,6 +785,7 @@ h3.my-profession{
     {
         flex: 0 0 100%;
         max-width: 100%;
+        padding-bottom: 50px;
     }
     
     .home .home-img{
@@ -819,7 +820,7 @@ h3.my-profession{
     .home .home-img img{
         margin: auto;
         border-radius: 5px;
-        height: 200px;
+        height: 400px;
     }
 }
 
