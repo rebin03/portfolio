@@ -786,9 +786,40 @@ h3.my-profession{
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .home .home-img
-    {
-        display: none;
+    
+    .home .home-img{
+        flex: 0 0 70%;
+        max-width: 70%;
+        text-align: center;
+        position: relative;
+    }
+    
+    .home-img::after{
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-bottom:6px solid var(--skin-color);
+        border-right: 6px solid var(--skin-color);
+        right: 5px;
+        bottom: -10px;
+    }
+    
+    .home-img::before{
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-top: 6px solid var(--skin-color);
+        border-left: 6px solid var(--skin-color);
+        left: -5px;
+        top: -10px;
+    }
+    
+    .home .home-img img{
+        margin: auto;
+        border-radius: 5px;
+        height: 200px;
     }
 }
 
