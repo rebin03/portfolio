@@ -19,6 +19,7 @@ body{
     line-height: 1.5;
     font-size: 16px;
     font-family: 'poppins' sans-serif;
+    overflow: hidden;
 }
 
 *{
@@ -338,8 +339,8 @@ h3.my-profession{
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
+    right: 0px;
+    bottom: 0px;
 }
 
 .home-img::before{
@@ -349,8 +350,8 @@ h3.my-profession{
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: -20px;
-    top: -40px;
+    left: 8px;
+    top: -5px;
 }
 
 .home .home-img img{
