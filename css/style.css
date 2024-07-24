@@ -15,11 +15,14 @@ body.dark{
     --text-black-700:#e9e9e9;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body{
     line-height: 1.5;
     font-size: 16px;
     font-family: 'poppins' sans-serif;
-    overflow: hidden;
 }
 
 *{
