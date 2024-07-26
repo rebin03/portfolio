@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 :root{
-    --bg-black-900:#f2f2fc;
-    --bg-black-100:#fbf5fe;
-    --bg-black-50:#e8dfec;
-    --text-black-900:#302e4d;
-    --text-black-700:#504e70;
-}
-
-body.dark{
     --bg-black-900:#151515;
     --bg-black-100:#222222;
     --bg-black-50:#393939;
     --text-black-900:#ffffff;
     --text-black-700:#e9e9e9;
+}
+
+body.light{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fbf5fe;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
 }
 
 ::-webkit-scrollbar {
@@ -69,7 +69,7 @@ ul{
 }
 
 .section .container{
-    padding-top: 60px;
+    padding-top: 10px;
     padding-bottom: 70px;
 }
 
@@ -154,7 +154,7 @@ ul{
 
 .home .home-info .linkbtn:hover .fa{
     font-size: 32px;
-    color: var(--bg-black-100);
+    color: #fbf5fe;
 }
 
 
@@ -330,7 +330,7 @@ h3.my-profession{
 
 .home .home-img{
     flex: 0 0 40%;
-    max-width: 40%;
+    max-width: 100%;
     text-align: center;
     position: relative;
 }
@@ -342,8 +342,8 @@ h3.my-profession{
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 0px;
-    bottom: 0px;
+    right: 100px;
+    bottom: -20px;
 }
 
 .home-img::before{
@@ -353,14 +353,21 @@ h3.my-profession{
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: 8px;
-    top: -5px;
+    left: 100px;
+    top: -25px;
 }
 
 .home .home-img img{
     margin: auto;
     border-radius: 5px;
     height: 400px;
+}
+
+.home .home-img .social-link{
+    flex: 0 0 40%;
+    max-width: 100%;
+    padding-top: 15px;
+    display: none;
 }
 
 /* About */
@@ -776,6 +783,14 @@ h3.my-profession{
     }
 }
 
+@media (max-width:1525px)
+{
+    .home-img::after,.home-img::before
+    {
+        border: none;
+    }
+}
+
 @media (max-width:991px)
 {   
     .contact .contact-info-item,
@@ -792,7 +807,22 @@ h3.my-profession{
     }
     .home .home-img
     {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+        position: relative;
+        padding-top: 40px;
+    }
+    .home-img::after,.home-img::before
+    {
+        border: none;
+    }
+    .home .home-info .social-link
+    {
         display: none;
+    }
+    .home .home-img .social-link{
+        display: block;
     }
 }
 
@@ -809,6 +839,10 @@ h3.my-profession{
     {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    h3.my-profession{
+        font-size: 20px;
+        margin: 15px 0;
     }
 }
 
